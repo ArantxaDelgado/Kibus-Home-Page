@@ -1,0 +1,12 @@
+@import "./base.css";
+
+body {
+  background-color: var( --second-back);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#app {
+  font-weight: normal;
+}
