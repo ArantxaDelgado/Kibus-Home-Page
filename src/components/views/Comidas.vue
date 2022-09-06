@@ -1,28 +1,31 @@
 <template>
   <div class="container">
     <div class="card">
-      <img class="foto" src="../../public/images/PolloPimiento.png" />
-      <p class="nombre">Pollo y Arroz</p>
+      <img class="foto" src="../../../public/images/PolloPimiento.png" />
+      <p class="nombre">Pollo y Pimiento</p>
       <p class="desc">Energética, con ingredientes antioxidantes</p>
     </div>
 
     <div class="card">
-      <img class="foto" src="../../public/images/SalmonArroz.png" />
+      <img class="foto" src="../../../public/images/SalmonArroz.png" />
       <p class="nombre">Salmón y Arroz</p>
       <p class="desc">Ipoalergénica, con Omega 3 y 6</p>
     </div>
 
     <div class="card">
-      <img class="foto" src="../../public/images/CerdoCalabaza.png" />
+      <img class="foto" src="../../../public/images/CerdoCalabaza.png" />
       <p class="nombre">Cerdo y Calabaza</p>
       <p class="desc">para dar vitalidad buena para el sistema inmune</p>
     </div>
 
     <div class="card">
-      <img class="foto" src="../../public/images/CerdoCalabaza.png" />
-      <button class="btn">
-        Tu Receta <img class="arrow" src="../../public/images/Stroke 3.png" />
-      </button>
+      <img class="foto" src="../../../public/images/CerdoCalabaza.png" />
+
+      <!-- Los links han dejado de funcionar porque no se importa bien vue-router -->
+      <router-link class="btn reserva" to="/Typeform">
+          Tu Receta <img class="arrow" src="../../../public/images/Stroke 3.png" />
+        </router-link>
+
       <p class="desc">Ayúdanos a decidir nuestra nueva receta</p>
     </div>
   </div>

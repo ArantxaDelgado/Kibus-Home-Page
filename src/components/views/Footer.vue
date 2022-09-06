@@ -3,7 +3,7 @@
     <div class="logo-container">
       <img
         class="logo"
-        src="../../public/images/KIBUS LOGO, COLOUR + ELEMENTS-08 1.png"
+        src="../../../public/images/KIBUS LOGO, COLOUR + ELEMENTS-08 1.png"
       />
     </div>
     <div class="container">
@@ -27,17 +27,17 @@
       <div class="section-especial">
         <img
           class="icons face"
-          src="../../public/images/facebook.png"
+          src="../../../public/images/facebook.png"
           alt="Facebook"
         />
         <img
           class="icons insta"
-          src="../../public/images/instagram.png"
+          src="../../../public/images/instagram.png"
           alt="Instagram"
         />
         <img
           class="icons youtube"
-          src="../../public/images/youtube.png"
+          src="../../../public/images/youtube.png"
           alt="Youtube"
         />
       </div>
@@ -45,10 +45,10 @@
       <div class="section">
         <p>Metodos de pago</p>
         <div class="section-especial">
-          <img class="pago" src="../../public/images/mastercard.png" />
-          <img class="pago" src="../../public/images/visa.png" />
-          <img class="pago" src="../../public/images/apple pay.png" />
-          <img class="pago" src="../../public/images/google pay.png" />
+          <img class="pago" src="../../../public/images/mastercard.png" />
+          <img class="pago" src="../../../public/images/visa.png" />
+          <img class="pago" src="../../../public/images/apple pay.png" />
+          <img class="pago" src="../../../public/images/google pay.png" />
         </div>
       </div>
     </div>

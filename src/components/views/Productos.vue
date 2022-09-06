@@ -2,39 +2,39 @@
   <div class="container">
 
     <div class="img-container">
-      <img class="top" src="../../public/images/app.png" />
-      <img class="bottom" src="../../public/images/comedero.png" />
+      <img class="top" src="../../../public/images/app.png" />
+      <img class="bottom" src="../../../public/images/comedero.png" />
     </div>
 
     <div class="column">
       <div class="section">
-        <img class="icon" src="../../public/images/programable icon.png" />
+        <img class="icon" src="../../../public/images/programable icon.png" />
         <p>Programmable 24h</p>
       </div>
       <div class="section">
-        <img class="icon" src="../../public/images/Group 62.png" />
+        <img class="icon" src="../../../public/images/Group 62.png" />
         <p>Agua siempre disponible</p>
       </div>
       <div class="section">
         <img
           class="icon"
-          src="../../public/images/cantidad personalizable.png"
+          src="../../../public/images/cantidad personalizable.png"
         />
         <p>Cantidad personalizable</p>
       </div>
       <div class="section">
-        <img class="icon" src="../../public/images/function.png" />
+        <img class="icon" src="../../../public/images/function.png" />
         <p>Histórial de las comidas</p>
       </div>
 
       <div class="section">
-        <img class="icon" src="../../public/images/Fácil de usar y lavar.png" />
+        <img class="icon" src="../../../public/images/Fácil de usar y lavar.png" />
         <p>Histórial de las comidas</p>
       </div>
       <div class="section">
         <img
           class="icon"
-          src="../../public/images/App para iOS y Android.png"
+          src="../../../public/images/App para iOS y Android.png"
         />
         <p>App para iOS y Android</p>
       </div>

@@ -2,11 +2,11 @@
   <div class="home">
     <img
       class="logo"
-      src="../../public/images/logo.png"
+      src="../../../public/images/logo.png"
       alt="logotipo de kibus"
     />
     <div class="head">
-      <img class="image" src="../../public/images/imagen.png" />
+      <img class="image" src="../../../public/images/imagen.png" />
       <div class="info">
         <h1>Alimentar bien a tu perro es más fácil que nunca</h1>
         <p>
@@ -16,14 +16,13 @@
         </p>
 
         <div class="btns">
-          <button class="btn reserva">Reserva Ahora</button>
-          <button class="btn btn-info">
-            Quiero Saber Más
+          <!-- Los links han dejado de funcionar porque no se importa bien vue-router -->
+          <router-link class="btn reserva" to="/productos">Reserva Ahora</router-link>
+          <router-link class="btn btn-info" to="/footer">Quiero Saber Más
             <img
               class="arrow"
-              src="../../public/images/Arrow - Right Circle.png"
-            />
-          </button>
+              src="../../../public/images/Arrow - Right Circle.png"/>
+          </router-link>
         </div>
       </div>
     </div>
@@ -90,6 +89,7 @@ p {
 
 .btn:hover {
   background-color: var(--color-primary-light);
+  color: black;
 }
 
 .btn {
@@ -114,6 +114,7 @@ p {
 .reserva {
   background-color: var(--color-primary);
   color: white;
+  text-align: center;
 }
 
 .arrow {

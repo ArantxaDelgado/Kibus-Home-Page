@@ -1,5 +1,5 @@
 <script setup>
-import Slider from "./Slider.vue";
+import Slider from "../Slider.vue";
 </script>
 
 <template>
@@ -18,14 +18,13 @@ import Slider from "./Slider.vue";
       </p>
 
       <div class="btns">
-        <button class="btn reserva">Reserva Ahora</button>
-        <button class="btn btn-info">
-          Quiero Saber Más
-          <img
-            class="arrow"
-            src="../../public/images/Arrow - Right Circle.png"
-          />
-        </button>
+        <!-- Los links han dejado de funcionar porque no se importa bien vue-router -->
+        <button class="btn reserva" >Reserva Ahora</button>
+          <router-link class="btn btn-info" to="/footer">Quiero Saber Más
+            <img
+              class="arrow"
+              src="../../../public/images/Arrow - Right Circle.png"/>
+          </router-link>
       </div>
     </div>
   </div>
@@ -82,27 +81,28 @@ img {
 }
 
 .btn {
-  border-radius: 32px;
-  height: 50px;
-  border: none;
   font-weight: 600;
-font-size: 16px;
-line-height: 18px;
+  font-size: 16px;
+  line-height: 18px;
+  width: 327px;
+  border-radius: 32px;
+  padding: 16px 32px;
+  border: none;
+  background-color: white;
 }
 
 .btn-info {
   border: 1px solid var(--color-primary);
   color: var(--color-primary);
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 16px;
-  background-color: var(--myWhite);
 }
 
 .reserva {
   background-color: var(--color-primary);
   color: white;
+  text-align: center;
 }
 
 .arrow {
