@@ -1,6 +1,11 @@
+<script setup>
+import Slider from "./Slider.vue";
+</script>
+
 <template>
   <div class="destacados">
-    <img src="../../public/images/contenido izquierdo.png" />
+    <!-- <img src="../../public/images/contenido izquierdo.png" /> -->
+    <Slider />
 
     <div class="text">
       <p class="title">Mejor para ellos, más fácil y cómodo para ti</p>
@@ -13,15 +18,15 @@
       </p>
 
       <div class="btns">
-          <button class="btn reserva">Reserva Ahora</button>
-          <button class="btn btn-info">
-            Quiero Saber Más
-            <img
-              class="arrow"
-              src="../../public/images/Arrow - Right Circle.png"
-            />
-          </button>
-        </div>
+        <button class="btn reserva">Reserva Ahora</button>
+        <button class="btn btn-info">
+          Quiero Saber Más
+          <img
+            class="arrow"
+            src="../../public/images/Arrow - Right Circle.png"
+          />
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -31,22 +36,35 @@ export default {};
 </script>
 
 <style scoped>
+img {
+  width: 438px;
+  height: auto;
+}
+
 .destacados {
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  margin-bottom: 50px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .title {
-  width: 425px;
-  font-size: 32px;
+  width: 327px;
   font-weight: 700;
-  line-height: 43.2px;
-  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .info {
-  width: 459px;
-  height: 168px;
+  width: 321px;
+  height: auto;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -55,16 +73,21 @@ export default {};
 
 .btns {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 21px;
-  margin-top: 30px;
+  flex-direction: column;
+  gap: 20px;
 }
+
+.btn:hover {
+  background-color: var(--color-primary-light);
+}
+
 .btn {
   border-radius: 32px;
-  padding: 16px 32px;
+  height: 50px;
   border: none;
-  background-color: white;
+  font-weight: 600;
+font-size: 16px;
+line-height: 18px;
 }
 
 .btn-info {
@@ -72,8 +95,9 @@ export default {};
   color: var(--color-primary);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 16px;
+  background-color: var(--myWhite);
 }
 
 .reserva {
@@ -84,5 +108,33 @@ export default {};
 .arrow {
   width: 1rem;
   height: 1rem;
+}
+
+@media only screen and (min-width: 992px) {
+  img {
+  width: 649.91px;
+}
+
+.destacados {
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.title {
+  width: 425px;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.info {
+  width: 459px;
+}
+
+.btns {
+  flex-direction: row;
+}
+.btn {
+  padding: 16px 32px;
+}
 }
 </style>

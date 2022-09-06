@@ -1,9 +1,11 @@
 <template>
   <div class="footer">
-    <img
-      class="logo"
-      src="../../public/images/KIBUS LOGO, COLOUR + ELEMENTS-08 1.png"
-    />
+    <div class="logo-container">
+      <img
+        class="logo"
+        src="../../public/images/KIBUS LOGO, COLOUR + ELEMENTS-08 1.png"
+      />
+    </div>
     <div class="container">
       <div class="section">
         <p class="title">Sobre KIBUS</p>
@@ -43,10 +45,10 @@
       <div class="section">
         <p>Metodos de pago</p>
         <div class="section-especial">
-            <img class="pago" src="../../public/images/mastercard.png" />
-            <img class="pago" src="../../public/images/visa.png" />
-            <img class="pago" src="../../public/images/apple pay.png" />
-            <img class="pago" src="../../public/images/google pay.png" />
+          <img class="pago" src="../../public/images/mastercard.png" />
+          <img class="pago" src="../../public/images/visa.png" />
+          <img class="pago" src="../../public/images/apple pay.png" />
+          <img class="pago" src="../../public/images/google pay.png" />
         </div>
       </div>
     </div>
@@ -62,41 +64,44 @@ export default {};
   color: var(--myWhite);
   background-color: #111;
   display: flex;
+  align-items: center;
   flex-direction: column;
-  margin-left: -68px;
-  margin-top: 250px;
-  padding: 58.69px 80px;
+  padding-top: 135px;
+  padding-bottom: 135px;
+}
 
+.logo-container {
+  width: 327px;
 }
 
 .container {
   display: flex;
-  gap: 105px;
+  flex-direction: column;
+  gap: 48px;
 }
 
 .section {
-  width: 380px;
+  width: 327px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 12px;
 }
 
 .section-especial {
-  width: 380px;
   display: flex;
-  gap: 6px;
+  gap: 20px;
 }
 
 .title {
   font-weight: 700;
-  font-size: 22px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .info {
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 22px;
 }
 
 .logo {
@@ -105,13 +110,51 @@ export default {};
 }
 
 .icons {
-  margin-left: 40px;
-  height: 20px;
+  height: 38px;
   width: auto;
 }
 
 .pago {
-    width: 58px;
-    height: 36px;
+  width: 58px;
+  height: 36px;
+}
+
+@media only screen and (min-width: 992px) {
+
+  .footer {
+    align-items: baseline;
+    padding: 59px 80px;
+  }
+.logo-container {
+  width: 327px;
+}
+
+.container {
+  flex-direction: row;
+  gap: 105px;
+}
+
+.section {
+  width: 380px;
+}
+
+.section-especial {
+  gap: 40px;
+}
+
+.title {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.icons {
+  height: 38px;
+  width: auto;
+}
+
+.pago {
+  width: 58px;
+  height: 36px;
+}
 }
 </style>

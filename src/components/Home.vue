@@ -36,58 +36,67 @@ export default {};
 
 <style scoped>
 h1 {
-  width: 710px;
-  font-size: 72px;
+  width: 327px;
+  font-size: 32px;
   font-weight: 700;
-  line-height: 72px;
+  line-height: 32px;
 }
 
 p {
-  width: 652px;
+  width: 327px;
   font-weight: 700;
   color: var(--font-color-secondary);
+  line-height: 22px;
 }
 
 .logo {
-  height: 54px;
-  width: 120px;
-  margin-bottom: 32px;
+  height: 32px;
+  width: 72px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 .home {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  margin-bottom: 170px;
+  margin: 0 auto;
 }
 
 .head {
   display: flex;
-  width: 100vw;
+  flex-direction: column;
+  align-items: center;
 }
 
 .info {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 8px;
+  align-items: center;
 }
 
 .image {
-  width: 700px;
-  height: 691.64px;
-  position: absolute;
-  left: 720.47px;
-  top: 140px;
+  align-self: center;
+  width: 370px;
+  height: auto;
 }
 
 .btns {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
   gap: 21px;
   margin-top: 32px;
 }
 
+.btn:hover {
+  background-color: var(--color-primary-light);
+}
+
 .btn {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  width: 327px;
   border-radius: 32px;
   padding: 16px 32px;
   border: none;
@@ -98,8 +107,7 @@ p {
   border: 1px solid var(--color-primary);
   color: var(--color-primary);
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 16px;
 }
 
@@ -112,5 +120,49 @@ p {
   width: 1rem;
   height: 1rem;
 }
-</style>
 
+@media only screen and (min-width: 992px) {
+  h1 {
+    width: 710px;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  p {
+    width: 652px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .logo {
+    width: 120px;
+    height: 54px;
+    margin-top: 68px;
+    margin-left: 68px;
+  }
+
+  .head {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .info {
+    gap: 32px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .image {
+    width: 754.11px;
+    height: auto;
+    
+  }
+
+  .btns {
+    flex-direction: row;
+    margin-top: 47px;
+  }
+}
+</style>

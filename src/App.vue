@@ -8,14 +8,12 @@ import Footer from "./components/Footer.vue";
 
 <template>
   <main>
-    <Home /> -->
-    <!-- <Comidas /> -->
-    <!-- <Destacados/> -->
-    <!-- <Productos/> -->
-    <!-- <Footer/> -->
+    <Home />
+    <Comidas />
+    <Destacados />
+    <Productos />
+    <Footer />
   </main>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

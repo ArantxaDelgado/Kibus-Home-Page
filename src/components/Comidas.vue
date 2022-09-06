@@ -20,7 +20,9 @@
 
     <div class="card">
       <img class="foto" src="../../public/images/CerdoCalabaza.png" />
-      <button class="btn">Tu Receta <img class="arrow" src="../../public/images/Stroke 3.png" /></button>
+      <button class="btn">
+        Tu Receta <img class="arrow" src="../../public/images/Stroke 3.png" />
+      </button>
       <p class="desc">Ayúdanos a decidir nuestra nueva receta</p>
     </div>
   </div>
@@ -32,14 +34,14 @@ export default {};
 
 <style scoped>
 .container {
+  margin: 0 auto;
   display: flex;
-  justify-content: space-around;
-  width: 1281px;
-  height: 462px;
+  width: 351px;
+  height: 398px;
   background-color: var(--myWhite);
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 0px 14px 37px 19px rgba(126, 126, 126, 0.08);
-  max-width: 1440px;
+  overflow: scroll;
 }
 
 .card {
@@ -50,17 +52,20 @@ export default {};
 }
 
 .desc {
-  font-size: 16px;
+  width: 199px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 20px;
   color: var(--font-color-secondary);
+  text-align: center;
 }
 
 .nombre {
+  width: 199px;
   font-weight: 700;
   font-size: 22px;
-  line-height: 26px;
-  margin-bottom: 24px;
+  line-height: 28px;
+  text-align: center;
 }
 
 .foto {
@@ -80,11 +85,26 @@ export default {};
   gap: 8px;
   padding: 8px 30px;
   border: none;
-  margin-bottom: 13px;
+
 }
 
-.arrow{
+.arrow {
   height: 16px;
   width: 16px;
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+  width: 1281px;
+  height: 462px;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.nombre {
+  width: 202px;
+  font-size: 28px;
+}
+
 }
 </style>

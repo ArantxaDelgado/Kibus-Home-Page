@@ -1,5 +1,11 @@
 <template>
   <div class="container">
+
+    <div class="img-container">
+      <img class="top" src="../../public/images/app.png" />
+      <img class="bottom" src="../../public/images/comedero.png" />
+    </div>
+
     <div class="column">
       <div class="section">
         <img class="icon" src="../../public/images/programable icon.png" />
@@ -33,9 +39,6 @@
         <p>App para iOS y Android</p>
       </div>
     </div>
-
-    <img class="front" src="../../public/images/app.png" />
-    <img class="back" src="../../public/images/comedero.png" />
   </div>
 </template>
 
@@ -44,20 +47,26 @@ export default {};
 </script>
 
 <style scoped>
+  p {
+    width: 158px;
+    text-align: center;
+  }
+
 .container {
-    max-width: 1440px;
   display: flex;
-  padding-left: 150px;
-  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
 }
 .column {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 32px;
+  justify-content: center;
 }
 
 .section {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 16px;
   font-weight: 600;
@@ -66,24 +75,63 @@ export default {};
 }
 
 .icon {
-  width: 42px;
+  width: 37.9px;
   height: auto;
 }
 
-.back {
-  position: absolute;
-  left: 622px;
-  top: 2150px;
-  width: 609.22px;
-  height: 551.49px;
+.img-container {
+  margin: 0 auto;
+  position: relative;
+  height: 430px;
 }
 
-.front {
+.top {
+  width: 150px;
   position: absolute;
-  left: 1044.06px;
-  top: 2279px;
+  left: 132px;
+  top: 100px;
   z-index: 10;
+}
+
+.bottom{
+  width: 327px;
+}
+
+@media only screen and (min-width: 992px) {
+  p {
+    width: 215px;
+    text-align: left;
+  }
+
+.container {
+  flex-direction: row-reverse;
+  margin-left: 200px;
+}
+.column {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.section {
+  flex-direction: row;
+  gap: 20px;
+}
+
+.icon {
+  width: 42px;
+}
+
+.img-container {
+  height: 650px;
+}
+
+.top {
   width: 272px;
-  height: 521px;
+  left: 350px;
+}
+
+.bottom{
+  width: 609.22px;
+}
 }
 </style>
